@@ -1,3 +1,5 @@
+package chapter_6
+
 class Rational(n: Int, d: Int) {
   require(denominator != 0, "denominator must not be 0")
 
@@ -11,7 +13,7 @@ class Rational(n: Int, d: Int) {
   /**
     * Adds two rationals
     * @param that The other rational to add
-    * @return A new Rational equals to the sum of this rational with that rational
+    * @return A new chapter_6.Rational equals to the sum of this rational with that rational
     */
   def +(that: Rational): Rational = new Rational(
     numerator * that.denominator + that.numerator * denominator,
@@ -21,7 +23,7 @@ class Rational(n: Int, d: Int) {
   /**
     * Multiplies two rational
     * @param that The other rational the multiply
-    * @return A new Rational equals ot the multiplication of this rational with that rational
+    * @return A new chapter_6.Rational equals ot the multiplication of this rational with that rational
     */
   def *(that: Rational): Rational = new Rational(
     numerator * that.numerator,
@@ -29,8 +31,8 @@ class Rational(n: Int, d: Int) {
   )
 
   /**
-    * Gives a string representation of this Rational
-    * @return A String representation of this Rational
+    * Gives a string representation of this chapter_6.Rational
+    * @return A String representation of this chapter_6.Rational
     */
   override def toString: String = s"$numerator/$denominator"
 
