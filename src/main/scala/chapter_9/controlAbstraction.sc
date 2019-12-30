@@ -36,10 +36,10 @@ curriedSum{ 2 }{
   */
 // Suppose we would like to implement an assertion
 val evaluateAssert = false
-def isTrueByNameParameter(predicate: => Boolean) =
+def isTrueByNameParameter(predicate: => Boolean): Unit =
   if(evaluateAssert && !predicate) throw new AssertionError
 // We could also implement the previous function like this:
-def isTrue(predicate: Boolean) =
+def isTrue(predicate: Boolean): Unit =
   if(evaluateAssert && !predicate) throw new AssertionError
 // And use them like this
 isTrueByNameParameter(1 < 3)

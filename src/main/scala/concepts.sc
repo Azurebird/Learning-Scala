@@ -46,3 +46,9 @@ treasureMap += (1 -> "Got to San Andres") // HashMap(1 -> Got to San Andres)
 treasureMap += (2 -> "Pay the most expensive hotel")
 treasureMap += (3 -> "check under the bed") // HashMap(1 -> Got to San Andres, 2 -> Pay the most expensive hotel, 3 -> check under the bed)
 treasureMap(3) // String = check under the bed
+
+def multiply(x: Int, y: Int): Int = x * y
+multiply(2, 3)
+
+implicit def stringToInt(string: String): Int = string.toInt
+multiply(2, "3")
