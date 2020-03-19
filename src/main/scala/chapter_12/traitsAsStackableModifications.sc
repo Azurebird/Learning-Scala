@@ -25,7 +25,7 @@ trait Incrementing extends IntQueue {
   abstract override def put(x: Int): Unit = super.put(x + 1)
 }
 
-class MyQueue extends BasicIntQueue with Incrementing with Doubling
+class MyQueue extends BasicIntQueue with Doubling
 
 val myQueue = new MyQueue
 myQueue.put(2)
